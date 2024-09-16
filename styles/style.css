@@ -1,57 +1,127 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  background-attachment: fixed;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  margin: 10px auto;
+  width: 80%;
+  background: linear-gradient(135deg, #fefefe 0%, #f0f0f0 100%);
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  color: #333;
+  text-align: center;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+/* Profile Photo Styles */
+.profile-photo {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Hamburger Menu Styles */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#nav-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
   nav ul {
-    list-style: none;
-    padding: 0;
+    display: none;
+    flex-direction: column;
   }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 20px;
-    margin: 10px auto;
-    width: 80%;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  h1, h2 {
-    color: #333;
+
+  .menu-icon {
+    display: block;
     text-align: center;
   }
-  
-  .project {
-    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    width: 95%;
   }
-  
-  ul {
-    list-style-type: square;
-    padding-left: 20px;
+
+  nav ul {
+    text-align: center;
   }
-  
-  ul li {
-    margin-bottom: 5px;
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
   }
-  
+
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Sticky Navigation */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.sticky + section {
+  padding-top: 60px; /* To avoid overlap with sticky navbar */
+}
