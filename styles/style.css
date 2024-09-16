@@ -119,6 +119,15 @@ ul li {
     width: 100px;
     height: 100px;
   }
+
+  .resume-button {
+    display: inline-block;
+    width: fit-content; /* Adjust width to fit text */
+    max-width: 100%; /* Ensure it does not overflow container */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: center; /* Center text within button */
+    margin: 10px auto; /* Center button horizontally */
+  }
 }
 
 /* Sticky Navigation */
@@ -143,16 +152,8 @@ ul li {
   border-radius: 5px;
   font-weight: bold;
   text-align: center;
-  margin: 10px 0; /* Vertical margin to keep space around button */
-  width: auto; /* Auto width based on content */
+  margin: 10px auto; /* Vertical margin to keep space around button */
+  width: auto; /* Adjust width based on content */
   max-width: 100%; /* Prevent overflow */
   box-sizing: border-box; /* Include padding in width calculation */
-}
-
-/* Ensure Button Visibility on Mobile */
-@media screen and (max-width: 480px) {
-  .resume-button {
-    width: 100%; /* Full width on mobile devices */
-    box-sizing: border-box; /* Ensure padding does not cause overflow */
-  }
 }
