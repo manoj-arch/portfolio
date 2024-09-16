@@ -141,9 +141,19 @@ ul li {
   border-radius: 5px;
   font-weight: bold;
   margin-top: 10px;
+  text-align: center; /* Ensure text is centered */
 }
 
 .resume-button:hover {
   background-color: #555;
   color: #fff;
+}
+
+/* Ensure Button Visibility on Mobile */
+@media screen and (max-width: 480px) {
+  .resume-button {
+    display: inline-block;
+    width: 100%; /* Make sure the button fits within its container */
+    text-align: center; /* Center text for mobile view */
+  }
 }
