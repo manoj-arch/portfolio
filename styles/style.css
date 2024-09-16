@@ -125,3 +125,20 @@ ul li {
 .sticky + section {
   padding-top: 60px; /* To avoid overlap with sticky navbar */
 }
+
+/* Resume Button Styles */
+.resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.resume-button:hover {
+  background-color: #555;
+  color: #fff;
+}
