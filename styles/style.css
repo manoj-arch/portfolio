@@ -39,6 +39,7 @@ section {
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  position: relative;
 }
 
 h1, h2 {
@@ -140,20 +141,16 @@ ul li {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  margin-top: 10px;
-  text-align: center; /* Ensure text is centered */
-}
-
-.resume-button:hover {
-  background-color: #555;
-  color: #fff;
+  margin: 10px auto; /* Center button horizontally */
+  text-align: center; /* Center text within button */
+  width: fit-content; /* Adjust width to content */
 }
 
 /* Ensure Button Visibility on Mobile */
 @media screen and (max-width: 480px) {
   .resume-button {
     display: inline-block;
-    width: 100%; /* Make sure the button fits within its container */
-    text-align: center; /* Center text for mobile view */
+    margin: 10px auto; /* Center button horizontally on mobile */
+    width: auto; /* Allow button to resize according to text */
   }
 }
