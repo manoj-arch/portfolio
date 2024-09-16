@@ -40,6 +40,7 @@ section {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   position: relative;
+  overflow: hidden; /* Ensure child elements do not overflow */
 }
 
 h1, h2 {
@@ -141,16 +142,17 @@ ul li {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  margin: 10px auto; /* Center button horizontally */
-  text-align: center; /* Center text within button */
-  width: fit-content; /* Adjust width to content */
+  text-align: center;
+  margin: 10px 0; /* Vertical margin to keep space around button */
+  width: auto; /* Auto width based on content */
+  max-width: 100%; /* Prevent overflow */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 /* Ensure Button Visibility on Mobile */
 @media screen and (max-width: 480px) {
   .resume-button {
-    display: inline-block;
-    margin: 10px auto; /* Center button horizontally on mobile */
-    width: auto; /* Allow button to resize according to text */
+    width: 100%; /* Full width on mobile devices */
+    box-sizing: border-box; /* Ensure padding does not cause overflow */
   }
 }
