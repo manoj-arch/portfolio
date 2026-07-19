@@ -1,78 +1,982 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manoj N - Portfolio</title>
-  <link rel="stylesheet" href="styles/style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Manoj N | Associate Consultant | Data Analyst</title>
+
+<meta name="description" content="Portfolio of Manoj N - Associate Consultant at IQVIA specializing in Data Analytics, SQL, Python and Web Development.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link
+href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+rel="stylesheet">
+
+<link rel="stylesheet" href="styles/style.css">
+
 </head>
+
 <body>
 
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-      <ul id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<div id="particles-js"></div>
 
-  <!-- Home Section -->
-  <section id="home">
-    <img src="images/profile.jpg" alt="Profile Photo" class="profile-photo">
-    <h1>Hello, I'm Manoj N</h1>
-    <p>Full-Stack Developer and Engineer</p>
-  </section>
+<div id="progressBar"></div>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm a Computer Science graduate with expertise in Java, Python, and web development. I've completed various projects like Gym Management System, Blood Bank Management, and more.</p>
-  </section>
+<header>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Gym Management System</h3>
-      <p>Developed a web application for managing gym operations. <a href="https://github.com/manoj-arch/gym-management">View Code</a></p>
-    </div>
-    <div class="project">
-      <h3>Blood Bank Management System</h3>
-      <p>Streamlined blood bank operations with secure database handling. <a href="https://github.com/manoj-arch/bbdms">View Code</a></p>
-    </div>
-  </section>
+<nav class="navbar">
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Java</li>
-      <li>Python</li>
-      <li>HTML/CSS/JavaScript</li>
-      <li>SQL</li>
-      <li>Git/GitHub</li>
-      <li>AWS</li>
-    </ul>
-  </section>
+<div class="logo">
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: manoj.n0703@gmail.com</p>
-    <p>Phone: +91-7892823184</p>
-    <p>
-      <a href="files/resume.pdf" download="Manoj_N_Resume.pdf" class="resume-button">Download My Resume</a>
-    </p>
-    <!-- To open in a new tab use: 
-    <p><a href="files/resume.pdf" target="_blank" class="resume-button">View My Resume</a></p> -->
-  </section>
+<h2>Manoj N</h2>
 
-  <script src="scripts/main.js"></script>
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#experience">Experience</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#education">Education</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="nav-icons">
+
+<button id="theme-toggle">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<div class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+<section id="home" class="hero">
+
+<div class="hero-left" data-aos="fade-right">
+
+<h4>Hello, I'm</h4>
+
+<h1>Manoj N</h1>
+
+<h2>
+
+<span id="typing"></span>
+
+</h2>
+
+<p>
+
+Transforming healthcare and business data into actionable insights using SQL, Python, Excel and modern analytics tools.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn">
+
+View Projects
+
+</a>
+
+<a href="files/resume.pdf"
+
+class="btn btn-outline"
+
+download>
+
+Download Resume
+
+</a>
+
+</div>
+
+<div class="social-icons">
+
+<a href="https://github.com/manoj-arch" target="_blank">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+<a href="#" target="_blank">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+<a href="mailto:manoj.n0703@gmail.com">
+
+<i class="fa-solid fa-envelope"></i>
+
+</a>
+
+<a href="tel:+917892823184">
+
+<i class="fa-solid fa-phone"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-right" data-aos="fade-left">
+
+<div class="profile-card">
+
+<img src="images/profile.jpg"
+
+alt="Manoj N">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<h2 data-aos="fade-up">
+
+About Me
+
+</h2>
+
+<p data-aos="fade-up">
+
+I am an Associate Consultant at IQVIA with professional experience in healthcare analytics, dashboard development and SQL-based reporting. I specialize in transforming raw data into meaningful insights that support strategic business decisions.
+
+</p>
+
+<div class="about-grid">
+
+<div class="about-card" data-aos="zoom-in">
+
+<i class="fa-solid fa-database"></i>
+
+<h3>Data Analytics</h3>
+
+<p>
+
+Experienced in SQL, Python and Excel for analytics and reporting.
+
+</p>
+
+</div>
+
+<div class="about-card" data-aos="zoom-in">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3>Business Intelligence</h3>
+
+<p>
+
+Developing dashboards and reports for healthcare and pharmaceutical clients.
+
+</p>
+
+</div>
+
+<div class="about-card" data-aos="zoom-in">
+
+<i class="fa-solid fa-code"></i>
+
+<h3>Web Development</h3>
+
+<p>
+
+Building responsive websites using HTML, CSS and JavaScript.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= EXPERIENCE ================= -->
+
+<section id="experience">
+
+<div class="container">
+
+<h2 class="section-title" data-aos="fade-up">
+Work Experience
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item" data-aos="fade-right">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<span class="timeline-date">
+June 2026 - Present
+</span>
+
+<h3>Associate Consultant</h3>
+
+<h4>IQVIA</h4>
+
+<p>
+
+Promoted to Associate Consultant after demonstrating strong analytical and problem-solving skills.
+
+</p>
+
+<ul>
+
+<li>Healthcare Data Analytics</li>
+
+<li>Advanced SQL Reporting</li>
+
+<li>Dashboard Development</li>
+
+<li>Business Insights</li>
+
+<li>Client Deliverables</li>
+
+<li>Process Improvement</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="timeline-item" data-aos="fade-left">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-content">
+
+<span class="timeline-date">
+
+November 2024 - June 2026
+
+</span>
+
+<h3>Data Analyst</h3>
+
+<h4>IQVIA</h4>
+
+<p>
+
+Worked on Pfizer Contracting project delivering dashboards and analytical reports.
+
+</p>
+
+<ul>
+
+<li>Account Mapping</li>
+
+<li>Scenario Identification</li>
+
+<li>Weekly Dashboards</li>
+
+<li>Monthly Reports</li>
+
+<li>Quarterly Reports</li>
+
+<li>SQL Analysis</li>
+
+<li>Excel Automation</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= STATISTICS ================= -->
+
+<section id="stats">
+
+<div class="container">
+
+<div class="stats-grid">
+
+<div class="stat-card" data-aos="zoom-in">
+
+<h2 class="counter" data-target="2">
+
+0
+
+</h2>
+
+<p>
+
+Years Experience
+
+</p>
+
+</div>
+
+<div class="stat-card" data-aos="zoom-in">
+
+<h2 class="counter" data-target="10">
+
+0
+
+</h2>
+
+<p>
+
+Projects Completed
+
+</p>
+
+</div>
+
+<div class="stat-card" data-aos="zoom-in">
+
+<h2 class="counter" data-target="12">
+
+0
+
+</h2>
+
+<p>
+
+Technologies
+
+</p>
+
+</div>
+
+<div class="stat-card" data-aos="zoom-in">
+
+<h2>
+
+100%
+
+</h2>
+
+<p>
+
+Dedication
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+<div class="container">
+
+<h2 class="section-title" data-aos="fade-up">
+
+Technical Skills
+
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card" data-aos="fade-up">
+
+<h3>
+
+Programming
+
+</h3>
+
+<div class="skill">
+
+<span>Python</span>
+
+<div class="bar">
+
+<div class="fill python"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<span>Java</span>
+
+<div class="bar">
+
+<div class="fill java"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<span>JavaScript</span>
+
+<div class="bar">
+
+<div class="fill js"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="skill-card" data-aos="fade-up">
+
+<h3>
+
+Data Analytics
+
+</h3>
+
+<div class="skill">
+
+<span>SQL</span>
+
+<div class="bar">
+
+<div class="fill sql"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<span>Excel</span>
+
+<div class="bar">
+
+<div class="fill excel"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<span>Dashboard Development</span>
+
+<div class="bar">
+
+<div class="fill dashboard"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="skill-card" data-aos="fade-up">
+
+<h3>
+
+Web Development
+
+</h3>
+
+<div class="skill">
+
+<span>HTML</span>
+
+<div class="bar">
+
+<div class="fill html"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<span>CSS</span>
+
+<div class="bar">
+
+<div class="fill css"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<span>Git & GitHub</span>
+
+<div class="bar">
+
+<div class="fill git"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+<div class="container">
+
+<h2 class="section-title" data-aos="fade-up">
+Featured Projects
+</h2>
+
+<div class="projects-grid">
+
+<div class="project-card" data-aos="zoom-in">
+
+<img src="images/healthcare.jpg" alt="Healthcare Dashboard">
+
+<div class="project-content">
+
+<h3>Healthcare Analytics Dashboard</h3>
+
+<p>
+Developed analytical dashboards for healthcare data using SQL and Excel to provide meaningful business insights.
+</p>
+
+<div class="tech-stack">
+
+<span>SQL</span>
+
+<span>Excel</span>
+
+<span>Analytics</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="#" class="btn">Live Demo</a>
+
+<a href="#" class="btn btn-outline">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="project-card" data-aos="zoom-in">
+
+<img src="images/gym.jpg" alt="Gym">
+
+<div class="project-content">
+
+<h3>Gym Management System</h3>
+
+<p>
+
+Complete gym management web application with member registration and admin dashboard.
+
+</p>
+
+<div class="tech-stack">
+
+<span>Java</span>
+
+<span>MySQL</span>
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="#" class="btn">
+
+View
+
+</a>
+
+<a href="https://github.com/manoj-arch/gym-management"
+
+target="_blank"
+
+class="btn btn-outline">
+
+GitHub
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="project-card" data-aos="zoom-in">
+
+<img src="images/blood.jpg" alt="Blood Bank">
+
+<div class="project-content">
+
+<h3>Blood Bank Management</h3>
+
+<p>
+
+Blood donation management application with secure database operations.
+
+</p>
+
+<div class="tech-stack">
+
+<span>Java</span>
+
+<span>MySQL</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="#" class="btn">
+
+View
+
+</a>
+
+<a href="https://github.com/manoj-arch/bbdms"
+
+target="_blank"
+
+class="btn btn-outline">
+
+GitHub
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Education
+
+</h2>
+
+<div class="education-card">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+<h3>
+
+Bachelor of Engineering
+
+</h3>
+
+<h4>
+
+Computer Science Engineering
+
+</h4>
+
+<p>
+
+Graduated in 2024
+
+</p>
+
+<p>
+
+Focused on Software Development, Database Systems and Programming.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+
+<section id="certifications">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Certifications
+
+</h2>
+
+<div class="certificate-grid">
+
+<div class="certificate-card">
+
+<i class="fa-solid fa-award"></i>
+
+<h3>Python Programming</h3>
+
+</div>
+
+<div class="certificate-card">
+
+<i class="fa-solid fa-database"></i>
+
+<h3>SQL</h3>
+
+</div>
+
+<div class="certificate-card">
+
+<i class="fa-solid fa-cloud"></i>
+
+<h3>AWS Cloud</h3>
+
+</div>
+
+<div class="certificate-card">
+
+<i class="fa-solid fa-code"></i>
+
+<h3>Java Programming</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Contact Me
+
+</h2>
+
+<div class="contact-grid">
+
+<div class="contact-info">
+
+<h3>
+
+Let's Connect
+
+</h3>
+
+<p>
+
+Email
+
+</p>
+
+<p>
+
+manoj.n0703@gmail.com
+
+</p>
+
+<p>
+
+Phone
+
+</p>
+
+<p>
+
++91 7892823184
+
+</p>
+
+<p>
+
+Location
+
+</p>
+
+<p>
+
+Bengaluru, Karnataka, India
+
+</p>
+
+</div>
+
+<form class="contact-form">
+
+<input type="text"
+
+placeholder="Your Name"
+
+required>
+
+<input type="email"
+
+placeholder="Your Email"
+
+required>
+
+<input type="text"
+
+placeholder="Subject">
+
+<textarea
+
+rows="6"
+
+placeholder="Your Message">
+
+</textarea>
+
+<button class="btn">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<h2>
+
+Manoj N
+
+</h2>
+
+<p>
+
+Associate Consultant | Data Analyst
+
+</p>
+
+<div class="footer-social">
+
+<a href="https://github.com/manoj-arch">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+<a href="mailto:manoj.n0703@gmail.com">
+
+<i class="fa-solid fa-envelope"></i>
+
+</a>
+
+</div>
+
+<p>
+
+© 2026 Manoj N. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<button id="scrollTop">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="scripts/main.js"></script>
+
 </body>
+
 </html>
